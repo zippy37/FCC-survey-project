@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri");
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(https://fate-go.us/assets/img/pc/common/bg_logo.png) no-repeat right fixed, url(https://fate-go.us/assets/img/pc/common/bg_ptn.gif) repeat center;
+  margin: 0;
+  font-family: "Noto Serif JP";
+  font-weight: 500;
+  overflow: auto;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+h1, p {
+  text-align: center;
+  margin-top: 0;
+}
+
+p[id="description"] {
+  text-align: center;
+  font-style: oblique;
+  margin: 1em auto;
+}
+
+div[id="top_background"] {
+  background: linear-gradient(90deg, rgb(18,26,111), rgb(89,168,216), rgb(18,26,111));
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 3px solid rgb(18,26,111);
+}
+
+h1, p {
+  font-family: "Noto Serif JP";
+  font-weight: 700;
+  text-shadow: 0 4px 4px black;
+  color: white;
+}
+
+.inline {
+  width: unset;
+  margin: 0 .5em 0 0;
+  vertical-align: middle;
+}
+
+form {
+  margin: 0 auto;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  padding-bottom: 0.1em;
+}
+
+fieldset[id="gender"] {
+  margin-top: 1em;
+}
+
+legend[id="gacha_names"] {
+  padding-top: 1em;
+}
+
+fieldset {  
+  border: none;
+  border-bottom: 3px solid rgb(18,26,111);
+}
+
+input::placeholder {
+  font-family: "Noto Serif JP";
+  font-weight: 100;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input[type="submit"] {
+  color: white;
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2.5em;
+  font-size: 1.5rem;
+  font-family: "Noto Serif JP";
+  background-image: linear-gradient(90deg, rgb(18,26,111), rgb(89,168,216), rgb(18,26,111)); 
+  text-shadow: 0 2px 4px black;
+  font-weight: 700;
+  min-width: 300px;
+}
+
+input[type="submit"]:active, input[type="submit"]:hover {
+  color:gold;
+  text-decoration: underline;
+}

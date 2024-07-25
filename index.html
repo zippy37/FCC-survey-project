@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <title>Gacha Survey</title>
+    <div id="top_background">
+    <h1 id="title">Gacha Survey</h1>
+     <p id="description">We request feedback to improve your experience.
+     </p>
+    </div>
+    <form id="survey-form">
+      <fieldset id="demographics">
+      <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Please enter your name" required></label>
+      <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Please enter your email" required></label>
+      <label for="number" id="number-label">Age: <input id="number" name="age" type="number" min="13" max="120" placeholder="Please enter a number" required></label>
+      </fieldset>
+      <fieldset id="gender">
+        <legend id="gender">Gender: </legend>
+        <label for="male"><input id="male" type="radio" value="male" name="gender" class="inline"/>Male</label>
+        <label for="female"><input id="female" value="female" type="radio" name="gender" class="inline"/>Female</label>
+        <label for="other"><input id="other" type="radio" value="none" name="gender" class="inline"/>Other</label>
+        <label for="none"><input id="none" value="none" type="radio" name="gender" class="inline" checked/>Choose not to answer</label>
+      </fieldset>
+      <fieldset id="questions">
+      <label for="number-label" id="number-label">How many gacha games do you currently play actively? <select id="dropdown" name="gacha_count" required>
+      <option value="">(choose one) </option>
+      <option value="1">1</option>
+      <option value="2">2-3</option>
+      <option value="3">4-6</option>
+      <option value="4">7-9</option>
+      <option value="5">10+</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset id="gacha_names">
+      <legend id="gacha_names">Which of the following gachas have you played or currently play? (Check all that apply)</legend>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="ak" name="gacha_names">Arknights</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="azl" name="gacha_names">Azur Lane</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="ba" name="gacha_names">Blue Archive</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="dbz" name="gacha_names">Dragon Ball Z: Dokkan Battle</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="fgo" name="gacha_names">Fate/Grand Order</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="genshin" name="gacha_names">Genshin Impact</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="nikke" name="gacha_names">Goddess of Victory: Nikke</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="gbf" name="gacha_names">Granblue Fantasy</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="hsr" name="gacha_names">Honkai: Star Rail</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="rsl" name="gacha_names">Raid: Shadow Legends</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="uma" name="gacha_names">Umamusume: Pretty Derby</label>
+      <label for="gacha_names"><input class="inline" type="checkbox"id="gacha_names" value="zzz" name="gacha_names">Zenless Zone Zero</label>
+    </fieldset>
+    <fieldset>
+      <label for="character">Who is your favorite character originating from a gacha game and why?<textarea id="character" rows="5" cols="30" placeholder="My favorite gacha game character is..."></textarea>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="character">Please provide any additional comments or feedback.<textarea id="character" rows="5" cols="30" placeholder="Your additional comments or feedback..."></textarea>
+      </label>
+    </fieldset>
+    <input id= "submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
